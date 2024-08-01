@@ -1,0 +1,118 @@
+body{
+    background:gray;
+    margin:0px;
+    padding:0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header{
+    /*background: rgb(255, 255, 255, .7);*/
+    background: red;
+    background-image:url(img/dog.png) ;
+
+    /*RSW 背景圖片縮放*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;/*可改成flexed*/
+    background-position: center;
+    /*RSW 背景圖片縮放*/
+
+    padding:0px; 
+    height:1080px;
+    text-align: center;
+}
+header nav .mobile{
+    display: none;
+}
+
+header .logo a{
+    background-image: url("img/MOOD.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    text-indent: -99999999px; /*讓文字往螢幕左邊去*/
+    width:100px;
+}
+
+/*nav*/
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display:inline-block;
+    margin-right:20px;
+}
+li a{
+    text-decoration: none;
+    -webkit-text-fill-color: aliceblue;
+    
+}
+
+/*main*/
+/*hero*/
+.homepage_hero{
+    position: relative;
+    background: blue ;
+    background-image: url("img/dog_cloth1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 1080px;
+    margin: -100px;
+    
+}
+.homepage_hero .hero_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(41, 41, 41, 0.6);
+    -webkit-text-fill-color: aliceblue;
+}
+.homepage_hero .hero_text h1{
+    font-size: 100px;
+}
+.homepage_hero .hero_text p{
+    font-size: 40px;
+}
+
+/*page2*/
+.homepage_page2{
+    background: rgb(253, 253, 253);
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.homepage_page2 .small_img{
+    margin: 10px;
+    width:300px;
+}
+.homepage_page2 .small_img img{
+    width: 300px;
+    border-radius: 2%;
+}
+.homepage_page2 .small_img img:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+    transform: scale(1.02);
+    transition: 0.5s;
+    
+}
+
+
+
+/*footer*/
+
+footer{
+    background:rgb(255, 202, 43);
+    padding:1.5em;
+}
